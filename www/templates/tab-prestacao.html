@@ -1,0 +1,25 @@
+<ion-view view-title="Prestação de Contas'">
+  <ion-content class="padding">
+    <h2>Prestação de Contas</h2>
+    <p>
+      É necessário um celular com GPS e câmera para utilizar essa funcionalidade.
+    </p>
+    <p>
+      <button type="button" ng-click="tirarFoto()" >Nova Foto</button>
+      <button type="button" ng-click="gravarAudio()" >Novo Audio</button>
+    </p>
+      <ion-list>
+        <img src="" id="myImage" />
+      </ion-list>
+    <p>
+      <button type="submit" ng-click="revisar()" value="Revisar e enviar">Revisar e enviar</button>
+    </p>
+  </ion-content>
+</ion-view>
+
+<script>
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    console.log("2",navigator.camera);
+}
+</script>
